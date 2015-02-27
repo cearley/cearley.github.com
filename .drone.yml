@@ -1,3 +1,3 @@
-image: dockerfile/coreos/apache
+image: coreos/apache
 script:
   - echo hello world
