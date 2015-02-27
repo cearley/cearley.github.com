@@ -1,3 +1,3 @@
-image: dockerfile/apache
+image: dockerfile/ubuntu
 script:
   - echo hello world
