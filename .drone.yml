@@ -1,3 +1,11 @@
-image: dockerfile/nginx
+image: dockerfile/ubuntu
 script:
-  - echo hello world
+  - ./.drone/build.sh
+deploy:
+  bash:
+    script:
+      - ./.drone/deploy.sh
+notify:
+  email:
+    recipients:
+      - cearley.consulting@gmail.com
